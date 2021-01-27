@@ -1,28 +1,30 @@
 {
   "bg": "https://images3.alphacoders.com/677/thumb-1920-677583.png",
-  "title": "Qual é esse Pokémon?",
+  "title": "Quem é esse Pokémon?",
   "description": "Será que você realmente é um mestre Pokémon capaz de reconhecê-los todos?",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg",
+      "title": "Quem é este Pokémon?",
       "description": "Essa é pra aquecer",
       "answer": 2,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Ivysaur",
+        "Bulbasaur",
+        "Charmander",
+        "Charmeleon"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6.svg",
+      "title": "Quem é este Pokémon?",
       "description": "Faz tempo em haha",
-      "answer": 0,
+      "answer": 1,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Charizard",
+         "Squirtle",
+         "Raticate",
+         "Charmander"
       ]
     }
   ],

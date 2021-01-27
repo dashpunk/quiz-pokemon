@@ -20,20 +20,6 @@ function LoadingWidget() {
   );
 }
 
-function LoadingResult() {
-  return (
-    <Widget>
-      <Widget.Header>
-        Resultado
-      </Widget.Header>
-
-      <Widget.Content>
-        Parabéns, você é um novo treinador Pokémon!
-      </Widget.Content>
-    </Widget>
-  );
-}
-
 function QuestionWidget({
   question,
   questionIndex,
@@ -55,11 +41,18 @@ function QuestionWidget({
         style={{
           width: '100%',
           height: '150px',
-          objectFit: 'container',
+          objectFit: 'cover',
         }}
         src={question.image}
       />
       <Widget.Content>
+        <h2>
+          {question.title}
+        </h2>
+        <p>
+          {question.description}
+        </p>
+
         <form
           onSubmit={(infosDoEvento) => {
             infosDoEvento.preventDefault();
@@ -88,7 +81,7 @@ function QuestionWidget({
             {JSON.stringify(question, null, 4)}
           </pre> */}
           <Button type="submit">
-            Capturar
+            Confirmar
           </Button>
         </form>
       </Widget.Content>
@@ -145,7 +138,7 @@ export default function QuizPage() {
 
         {screenState === screenStates.LOADING && <LoadingWidget />}
 
-        {screenState === screenStates.RESULT && <LoadingResult />}
+        {screenState === screenStates.RESULT && <div>Você acertou X questões, parabéns!</div>}
       </QuizContainer>
     </QuizBackground>
   );

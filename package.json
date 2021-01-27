@@ -10,12 +10,16 @@
     "yarn:install": "yarn install"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "lottie-react-native": "^3.5.0",
     "next": "latest",
     "npm-git-install": "^0.3.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-is": "^16.8.0",
-    "styled-components": "^5.0.0"
+    "react-native": "^0.63.4",
+    "styled-components": "^5.0.0",
+    "vivus": "^0.4.5"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.8.0",
