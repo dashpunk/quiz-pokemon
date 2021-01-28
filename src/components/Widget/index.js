@@ -47,4 +47,51 @@ Widget.Content = styled.div`
   }
 `;
 
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+`;
+
+Widget.Git = styled.div`
+  overflow: visible;
+  margin: 5px 0 5px;
+  position: relative;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+`;
+
+Widget.GitName = styled.a`
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+`;
+
+Widget.Image = styled.div`
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(${({ backgroundImage }) => backgroundImage});
+  background-color: ${({ theme }) => theme.colors.mainBg};
+  flex: 1;
+  height: 130px;
+  background-position: center;
+`;
+
 export default Widget;

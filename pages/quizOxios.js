@@ -67,9 +67,7 @@ function Pokemon({ _pokemon }) {
                   return(
                     <Widget.Git>
                       <img width='30' height='30' src={_pokemon.items[alternativeIndex].owner.avatar_url}></img>
-                      <Widget.GitName href={_pokemon.items[alternativeIndex].homepage}>
-                        {_pokemon.items[alternativeIndex].name}
-                      </Widget.GitName>
+                      <a href={_pokemon.items[0].homepage}>{_pokemon.items[alternativeIndex].name}</a>
                     </Widget.Git>
                   );
                 }
@@ -94,7 +92,8 @@ Pokemon.getInitialProps = async ({ query }) => {
   const number = query.name;
   const randomNumber = Math.floor(Math.random() * 100);
   const _pokemon = await axios
-    .get(`https://api.github.com/search/repositories?q=topic:alura+quiz&sort=reactions`)
+    //.get(`https://pokeapi.co/api/v2/pokemon/${randomNumber}`)
+    .get(`https://api.github.com/search/repositories?q=topic:alura+quiz&sort=created&order=desc`)
     .then((response) => response.data);
   return { _pokemon };
 };
