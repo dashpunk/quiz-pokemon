@@ -55,7 +55,7 @@ function QuestionWidget({
         style={{
           width: '100%',
           height: '150px',
-          objectFit: 'container',
+          objectFit: 'container', 
         }}
         src={question.image}
       />
