@@ -85,8 +85,8 @@ Widget.GitName = styled.a`
 
 Widget.Image = styled.div`
   width: 100%;
-  background-size: contain;
   background-repeat: no-repeat;
+  background-size: ${({ backgroundSize }) => backgroundSize};
   background-image: url(${({ backgroundImage }) => backgroundImage});
   background-color: ${({ theme }) => theme.colors.mainBg};
   flex: 1;
