@@ -2,12 +2,15 @@
   "bg": "https://images3.alphacoders.com/677/thumb-1920-677583.png",
   "title": "Quem é esse Pokémon?",
   "description": "Será que você realmente é um mestre Pokémon capaz de reconhecê-los todos?",
+  "imgSuccesss": "https://i.gifer.com/MfJw.gif",
+  "imgError": "https://i.gifer.com/3klP.gif",
+  "bg": "https://images3.alphacoders.com/677/thumb-1920-677583.png",
   "questions": [
     {
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg",
       "title": "Quem é este Pokémon?",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 1,
       "alternatives": [
         "Ivysaur",
         "Bulbasaur",
@@ -19,7 +22,7 @@
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6.svg",
       "title": "Quem é este Pokémon?",
       "description": "Faz tempo em haha",
-      "answer": 1,
+      "answer": 0,
       "alternatives": [
          "Charizard",
          "Squirtle",
